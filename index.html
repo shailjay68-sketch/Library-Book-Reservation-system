@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Library System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>📚 Central Library Dashboard</h1>
+        <p>Welcome back! Manage your library resources seamlessly.</p>
+    </header>
+
+    <nav aria-label="Main Navigation">
+        <a href="index.html">Home</a>
+        <a href="books.html">Explore Books</a>
+        <a href="reservation.html">Reserve Book</a>
+        <a href="login.html" id="logout-btn">Logout</a>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Popular Book Categories</h2>
+            <ul>
+                <li>Computer Science & Engineering
+                    <ul>
+                        <li>Web Development (HTML, CSS, JS)</li>
+                        <li>Database Management Systems</li>
+                    </ul>
+                </li>
+                <li>Artificial Intelligence & Data Science</li>
+                <li>Mathematics & Core Engineering</li>
+            </ul>
+        </section>
+
+        <section id="glossary">
+            <h2>Library Glossary</h2>
+            <dl>
+                <dt>Reservation</dt>
+                <dd>Holding a book temporarily so no other user can issue it.</dd>
+                <dt>ISBN</dt>
+                <dd>International Standard Book Number used for unique book identification.</dd>
+            </dl>
+        </section>
+
+        <section id="schedule">
+            <h2>Library Fine & Borrowing Schedule</h2>
+            <table>
+                <caption>Fine Structure for Late Submissions</caption>
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Allowed Days</th>
+                        <th>Fine Amount (Per Day)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">Students</td>
+                        <td>First 7 Days</td>
+                        <td>₹10</td>
+                    </tr>
+                    <tr>
+                        <td>After 7 Days</td>
+                        <td>₹25</td>
+                    </tr>
+                    <tr>
+                        <td>Faculty</td>
+                        <td colspan="2">No late fines applicable</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <address>
+            Central Library Block, University Campus<br>
+            Email: support@librarysystem.edu
+        </address>
+        <p>&copy; 2026 Library Reservation System. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
