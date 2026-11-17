@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Books & Reserve - Library Portal</title>
+    <!-- Favicon link -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>📚 Book Catalog & Reservation</h1>
+        <p>Browse available titles and place your reservation request</p>
+    </header>
+
+    <!-- Navigation Section -->
+    <nav aria-label="Main Navigation">
+        <a href="index.html">Home</a>
+        <a href="books.html">Explore Books</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Section 1: Book Search Form Structure -->
+        <section>
+            <h2>Search Books</h2>
+            <form id="search-form">
+                <label for="search-input">Book Title / Author:</label>
+                <input type="text" id="search-input" placeholder="Type book title..." required>
+                <button type="submit">Search</button>
+            </form>
+        </section>
+
+        <!-- Section 2: Book Catalog Table Structure -->
+        <section>
+            <h2>Available Books Directory</h2>
+            <table border="1">
+                <caption>Current Library Stock</caption>
+                <thead>
+                    <tr>
+                        <th>Book ID</th>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>B001</td>
+                        <td>Clean Code</td>
+                        <td>Robert C. Martin</td>
+                        <td>Available</td>
+                    </tr>
+                    <tr>
+                        <td>B002</td>
+                        <td>The Pragmatic Programmer: Your Journey to Mystery</td>
+                        <td>Andrew Hunt</td>
+                        <td>Available</td>
+                    </tr>
+                    <tr>
+                        <td>B003</td>
+                        <td>HTML & CSS Design</td>
+                        <td>Jon Duckett</td>
+                        <td>Reserved</td>
+                    </tr>
+                    <tr>
+                        <td>B004</td>
+                        <td>A Philosophy of Software Design</td>
+                        <td>John Outerhout</td>
+                        <td>Avaiable</td>
+                    </tr>
+                    <tr>
+                        <td>B005</td>
+                        <td>Eloquent JavaScript,4th Edition</td>
+                        <td>Marijn Haverbeke</td>
+                        <td>Reserved</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Section 3: Student Book Reservation Form -->
+        <section>
+            <form id="reservationform">
+                <fieldset>
+                    <legend>Reserve a Book</legend>
+
+                    <label for="student-name">Full Name:</label>
+                    <input type="text" id="student-name" name="studentName" placeholder="Enter your full name" required>
+
+                    <label for="student-id">Student Registration ID:</label>
+                    <input type="text" id="student-id" name="studentId" placeholder="e.g. 12345678" required>
+
+                    <label for="book-select">Select Book:</label>
+                    <select id="book-select" name="bookSelect" required>
+                        <option value="">-- Choose a Book --</option>
+                        <option value="Clean Code">Clean Code</option>
+                        <option value="The Pragmatic Programmer">The Pragmatic Programmer</option>
+                        <option value="HTML & CSS Design">HTML & CSS Design</option>
+                    </select>
+
+                    <label for="reserve-date">Reservation Date:</label>
+                    <input type="date" id="reserve-date" name="reserveDate" required>
+
+                    <button type="submit">Confirm Reservation</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <address>
+            Central Library Block, University Campus<br>
+            Email: support@librarysystem.edu
+        </address>
+        <!--Ye wali line add karni hai-->
+        <script src="app.js"></script>
+        
+        <p>&copy; 2026 Library Reservation System. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
